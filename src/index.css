@@ -1,9 +1,12 @@
-@import 'tailwindcss';
+﻿@import 'tailwindcss';
 
 /*
- * Tema de ESTÉTICA GUION — marfil, beige cálido, rosa empolvado,
+ * Tema de ESTÃ‰TICA GUION â€” marfil, beige cÃ¡lido, rosa empolvado,
  * verde salvia y detalles dorados discretos.
+ * Base editorial: tipografÃ­a serif elegante para tÃ­tulos, cuerpo
+ * en sans monolÃ­ngue, espacios generosos y microinteracciones sutiles.
  */
+
 @theme {
   --color-marfil-50: #fdfbf7;
   --color-marfil-100: #faf6ef;
@@ -27,13 +30,14 @@
   --color-tinta-800: #3b342c;
   --color-tinta-900: #2b261f;
 
-  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-display: 'Fraunces', 'Georgia', 'Times New Roman', serif;
   --font-sans: 'Jost', 'Segoe UI', system-ui, sans-serif;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -46,6 +50,7 @@
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
     }
   }
 
@@ -53,19 +58,30 @@
     @apply bg-marfil-100 font-sans text-tinta-800 antialiased;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  body,
+  input,
+  textarea,
+  button {
+    @apply selection:bg-rosa-200 selection:text-tinta-900;
+  }
+
+  h1, h2, h3, h4 {
     @apply font-display;
+    letter-spacing: -0.02em;
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-oro-500;
+    outline: 2px solid var(--color-oro-500);
+    outline-offset: 2px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
   }
 
   ::selection {
-    @apply bg-rosa-200 text-tinta-900;
+    background: var(--color-rosa-200);
+    color: var(--color-tinta-900);
   }
 }
 
@@ -77,17 +93,17 @@
   text-wrap: balance;
 }
 
-/* Efecto de esqueleto de carga */
 @utility skeleton {
   @apply relative overflow-hidden bg-beige-100;
 }
+
 .skeleton::after {
   content: '';
   position: absolute;
   inset: 0;
   transform: translateX(-100%);
   background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.55), transparent);
-  animation: shimmer 1.6s infinite;
+  animation: shimmer 1.8s infinite;
 }
 
 @keyframes shimmer {
@@ -101,3 +117,22 @@
     animation: none;
   }
 }
+
+@utility glow-oro {
+  position: relative;
+}
+
+.glow-oro::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-oro-400), var(--color-oro-600));
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: exclude;
+  mask-composite: exclude;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+

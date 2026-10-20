@@ -1,10 +1,8 @@
 /** Catálogo de cosmética: categorías, búsqueda, orden, favoritos y estados vacíos. */
 import { useMemo, useState } from 'react'
 import { Search, SlidersHorizontal, X } from 'lucide-react'
-import { ProductCard } from '@/components/ProductCard'
-import { Reveal } from '@/components/Reveal'
+import { ProductCarousel } from '@/components/ProductCarousel'
 import { EmptyState } from '@/components/EmptyState'
-import { useToast } from '@/components/Toast'
 import { useStore } from '@/context/StoreContext'
 import { countByCategory, DEFAULT_FILTERS, filterProducts } from '@/lib/catalog'
 import { cx } from '@/lib/format'
@@ -19,7 +17,6 @@ const SORT_OPTIONS: Array<{ value: SortKey; label: string }> = [
 
 export function ShopPage() {
   const { products, categories } = useStore()
-  const { show } = useToast()
   const [filters, setFilters] = useState(DEFAULT_FILTERS)
 
   const counts = useMemo(() => countByCategory(products, categories), [products, categories])
@@ -154,16 +151,7 @@ export function ShopPage() {
           }
         />
       ) : (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {results.map((product, i) => (
-            <Reveal key={product.id} delay={Math.min(i * 0.05, 0.4)}>
-              <ProductCard
-                product={product}
-                onAdded={(name) => show(`${name} añadido a la cesta`)}
-              />
-            </Reveal>
-          ))}
-        </div>
+        <ProductCarousel />
       )}
     </div>
   )
