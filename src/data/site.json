@@ -1,0 +1,18 @@
+{
+  "brand": "ESTÉTICA GUION",
+  "tagline": "Estética & cosmética de autor",
+  "heroTitle": "La belleza,",
+  "heroHighlight": "sin prisa",
+  "heroSubtitle": "Centro de estética y cosmética premium: tratamientos faciales y corporales, tienda de productos de autor y una experiencia de bienestar diseñada al detalle.",
+  "heroImage": "/images/hero.jpg",
+  "heroAlt": "Profesional aplicando una mascarilla facial con pincel a una clienta en el centro",
+  "aboutTitle": "Un espacio pensado para desconectar",
+  "aboutText": "ESTÉTICA GUION nace de la idea de que cuidarse es un ritual, no una tarea. Nuestro equipo combina técnicas manuales de siempre con tecnología suave, en un entorno de luz natural, aromas botánicos y tiempo propio. Cada visita empieza con un diagnóstico y termina con una tisana caliente.",
+  "aboutImage": "/images/about.jpg",
+  "aboutAlt": "Interior sereno de un espacio de bienestar con vegetación tropical y mobiliario natural",
+  "contactEmail": "hola@esteticaguion.example",
+  "contactPhone": "+34 600 000 000",
+  "contactAddress": "Av. del Mediterráneo 000, 00000 Ciudad Ficticia",
+  "contactHours": "Lun–Vie 10:00–20:00 · Sáb 10:00–15:00 · Dom cerrado",
+  "demoNotice": "Sitio de demostración: marca, precios, productos, testimonios y datos de contacto son ficticios. No se realizan ventas, cobros ni reservas reales."
+}

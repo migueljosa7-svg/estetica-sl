@@ -1,0 +1,33 @@
+# Dependencias
+node_modules
+
+# Build
+dist
+dist-ssr
+coverage
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Entorno
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel

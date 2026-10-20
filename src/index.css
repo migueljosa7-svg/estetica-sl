@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+/*
+ * Tema de ESTÉTICA GUION — marfil, beige cálido, rosa empolvado,
+ * verde salvia y detalles dorados discretos.
+ */
+@theme {
+  --color-marfil-50: #fdfbf7;
+  --color-marfil-100: #faf6ef;
+  --color-marfil-200: #f3ecdf;
+  --color-beige-100: #f0e7d8;
+  --color-beige-200: #e6d9c3;
+  --color-beige-300: #d9c8ab;
+  --color-rosa-100: #f7e9e6;
+  --color-rosa-200: #eed4cf;
+  --color-rosa-300: #e2b5ae;
+  --color-rosa-400: #cf948c;
+  --color-salvia-100: #e9ede5;
+  --color-salvia-200: #d3dccc;
+  --color-salvia-300: #b3c1aa;
+  --color-salvia-400: #8d9d84;
+  --color-salvia-600: #5d6b55;
+  --color-oro-300: #ddc287;
+  --color-oro-400: #c8a15e;
+  --color-oro-500: #a98543;
+  --color-tinta-700: #4a4238;
+  --color-tinta-800: #3b342c;
+  --color-tinta-900: #2b261f;
+
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-sans: 'Jost', 'Segoe UI', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-marfil-100 font-sans text-tinta-800 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-oro-500;
+  }
+
+  ::selection {
+    @apply bg-rosa-200 text-tinta-900;
+  }
+}
+
+@utility container-site {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+@utility text-balance-site {
+  text-wrap: balance;
+}
+
+/* Efecto de esqueleto de carga */
+@utility skeleton {
+  @apply relative overflow-hidden bg-beige-100;
+}
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.55), transparent);
+  animation: shimmer 1.6s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    animation: none;
+  }
+}

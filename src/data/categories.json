@@ -1,0 +1,7 @@
+[
+  { "id": "cat-facial", "name": "Cuidado facial", "slug": "cuidado-facial", "description": "Sérums, cremas y mascarillas para una piel luminosa y descansada." },
+  { "id": "cat-corporal", "name": "Cuidado corporal", "slug": "cuidado-corporal", "description": "Exfoliantes, aceites y lociones para el cuerpo en su estado más suave." },
+  { "id": "cat-maquillaje", "name": "Maquillaje", "slug": "maquillaje", "description": "Color natural, texturas ligeras y acabados editoriales." },
+  { "id": "cat-perfumeria", "name": "Perfumería", "slug": "perfumeria", "description": "Fragancias de autor inspiradas en jardines del Mediterráneo." },
+  { "id": "cat-cabello", "name": "Cabello", "slug": "cabello", "description": "Brumas y cuidados capilares con ingredientes botánicos." }
+]

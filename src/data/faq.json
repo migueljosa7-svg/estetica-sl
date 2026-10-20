@@ -1,0 +1,32 @@
+[
+  {
+    "id": "faq-01",
+    "question": "¿Necesito cita previa para el centro?",
+    "answer": "Sí. Trabajamos con cita previa para garantizar tiempos de calidad y privacidad. Puedes reservar desde el formulario de contacto o llamando al teléfono del centro. En menos de 24 h laborables confirmamos tu cita."
+  },
+  {
+    "id": "faq-02",
+    "question": "¿Los productos que vendéis son aptos para pieles sensibles?",
+    "answer": "Toda la cosmética de la casa ha sido seleccionada por nuestro equipo técnico y prioriza fórmulas sin perfume, sin aceites minerales y con activos calmantes. Aun así, recomendamos una prueba de parche previa y valoración personalizada en el centro."
+  },
+  {
+    "id": "faq-03",
+    "question": "¿Cómo funcionan los envíos de la tienda?",
+    "answer": "Es una tienda de demostración: no se realizan cobros ni envíos reales. En una tienda real, el envío estándar tardaría de 24 a 72 h y sería gratuito a partir de 60 €."
+  },
+  {
+    "id": "faq-04",
+    "question": "¿Puedo cancelar o reprogramar mi cita?",
+    "answer": "Por supuesto. Avisando con al menos 12 horas de antelación puedes reprogramar o cancelar sin coste. Contacta por teléfono o correo indicando tu nombre y la fecha reservada."
+  },
+  {
+    "id": "faq-05",
+    "question": "¿Qué diferencia hay entre los tratamientos faciales?",
+    "answer": "El Hidrafacial se enfoca en luminosidad y poros, el Ritual de Arcilla en purificar pieles mixtas o sensibles y el diseño de cejas en definir la mirada. En tu primera visita hacemos un diagnóstico gratuito para recomendar el más adecuado."
+  },
+  {
+    "id": "faq-06",
+    "question": "¿Este sitio es una demo?",
+    "answer": "Sí. ESTÉTICA GUION es una marca ficticia creada como demostración técnica. Todos los precios, productos, testimonios y datos de contacto son inventados y no se realiza ninguna venta ni reserva real."
+  }
+]

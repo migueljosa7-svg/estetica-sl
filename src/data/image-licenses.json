@@ -1,0 +1,32 @@
+{
+  "_nota": "Registro de procedencia de todas las imágenes externas. Las SVG de /images/products/ son obra original del proyecto (scripts/gen-product-images.mjs). Las fotos se descargaron de Unsplash (licencia verificada el 2026-10-20 en https://help.unsplash.com/en/articles/2612315-can-i-use-unsplash-images-for-personal-or-commercial-projects: uso comercial permitido, atribución no obligatoria). El autor no pudo determinarse (API con clave requerida) y se registra como «no determinado» sin inventarlo.",
+  "verificationDate": "2026-10-20",
+  "licenseSummary": {
+    "id": "unsplash",
+    "name": "Unsplash License",
+    "commercialUse": true,
+    "attributionRequired": false,
+    "verifiedAt": "2026-10-20",
+    "source": "https://help.unsplash.com/en/articles/2612315-can-i-use-unsplash-images-for-personal-or-commercial-projects",
+    "termsPage": "https://unsplash.com/terms"
+  },
+  "assets": [
+    { "file": "/images/hero.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/about.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/slide-1.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/slide-2.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/slide-3.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/slide-4.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-facial-1.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1552693673-1bf958298935", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-facial-2.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-facial-3.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-corp-1.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-corp-2.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1526947425960-945c6e72858f", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-corp-3.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" },
+    { "file": "/images/t-corp-4.jpg", "type": "photo", "source": "Unsplash CDN", "originalUrl": "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8", "author": "no determinado (API con clave requerida)", "license": "Unsplash License", "licenseUrl": "https://unsplash.com/license", "attribution": "No obligatoria bajo licencia Unsplash" }
+  ],
+  "selfOwned": [
+    { "pattern": "/images/products/*.svg", "type": "svg", "author": "Generado para este proyecto (scripts/gen-product-images.mjs)", "license": "Obra original del proyecto — uso permitido en esta demo", "note": "Ilustraciones originales con la paleta de marca; sin recursos de terceros." }
+  ],
+  "discardedCandidates": "Se evaluaron candidatas de Wikimedia Commons y Unsplash; se descartaron las que tenían marcas comerciales visibles, contenido inapropiado o calidad insuficiente."
+}

@@ -1,0 +1,127 @@
+{
+  "warning": "DOCUMENTO DEMO — BORRADOR DE DEMOSTRACIÓN. Estos textos son ejemplos ficticios creados únicamente para ilustrar una web de demostración. NO son asesoramiento jurídico, NO contienen datos registrales reales y NO deben publicarse sin revisión profesional por un abogado o asesor legal cualificado. Antes de publicar la web real deberán redactarse textos propios y completarse los datos registrales verdaderos de la empresa.",
+  "pages": {
+    "privacidad": {
+      "title": "Política de privacidad (DEMO)",
+      "intro": "Esta política describe, a modo de ejemplo, cómo una web de estética trataría los datos personales de sus visitantes y clientes.",
+      "sections": [
+        {
+          "heading": "1. Responsable del tratamiento (ejemplo ficticio)",
+          "body": "ESTÉTICA GUION (marca ficticia de esta demo). Correo de contacto: hola@esteticaguion.example. Este sitio no está vinculado a ninguna empresa real ni a persona física identificable."
+        },
+        {
+          "heading": "2. Qué datos recogemos",
+          "body": "El formulario de contacto recoge únicamente nombre, correo electrónico, teléfono (opcional), motivo y mensaje. No se solicitan datos sensibles. La tienda y el carrito son simulados: no se recogen datos de pago ni se procesan transacciones."
+        },
+        {
+          "heading": "3. Finalidad y base legal",
+          "body": "Los datos del formulario se usarían, en una web real, para responder a la consulta solicitada, sobre la base del consentimiento del interesado (art. 6.1.a RGPD)."
+        },
+        {
+          "heading": "4. Conservación",
+          "body": "En una web real, los datos se conservarían mientras se atienda la consulta y, posteriormente, durante los plazos legales de prescripción."
+        },
+        {
+          "heading": "5. Destinatarios y encargados",
+          "body": "No se cederían datos a terceros salvo obligación legal. Un hosting o proveedor de email actuaría como encargado del tratamiento con contrato correspondiente."
+        },
+        {
+          "heading": "6. Tus derechos",
+          "body": "Podrías ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo al correo de contacto y acreditando tu identidad. También podrías presentar reclamación ante la autoridad de control competente."
+        },
+        {
+          "heading": "7. Datos locales de esta demo",
+          "body": "Esta demo guarda el carrito, los favoritos y las ediciones del panel de administración en el localStorage de TU navegador. Esos datos no salen de tu dispositivo, no se sincronizan entre usuarios ni entre navegadores, y se borran al limpiar los datos del sitio. No existe base de datos compartida."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Política de cookies (DEMO)",
+      "intro": "Ejemplo de política de cookies para una web de estética sin cookies publicitarias de terceros.",
+      "sections": [
+        {
+          "heading": "1. Qué son las cookies",
+          "body": "Las cookies son pequeños archivos que un sitio guarda en tu dispositivo para recordar información sobre tu visita."
+        },
+        {
+          "heading": "2. Cookies y almacenamiento que usa esta demo",
+          "body": "Esta demo NO instala cookies de terceros, NO usa herramientas de analítica y NO activa publicidad personalizada. Únicamente usa almacenamiento local (localStorage) de tu navegador para recordar el carrito, los favoritos y la sesión de demostración del panel de administración. Ese almacenamiento es técnico, de primera parte, y no se comparte con terceros."
+        },
+        {
+          "heading": "3. Consentimiento",
+          "body": "Al no existir cookies no esenciales, no se muestra un banner de consentimiento. En una web real con analítica o publicidad, sería obligatorio un banner que permita aceptar, rechazar o configurar las cookies no esenciales antes de instalarlas."
+        },
+        {
+          "heading": "4. Cómo eliminar el almacenamiento local",
+          "body": "Puedes borrar los datos de la demo desde la configuración de tu navegador («Borrar datos de navegación» / «Sitios web guardados»), lo que restablecerá el carrito, los favoritos y el panel a su estado inicial."
+        }
+      ]
+    },
+    "condiciones": {
+      "title": "Condiciones de compra (DEMO)",
+      "intro": "Ejemplo de condiciones de compra para la tienda ficticia de ESTÉTICA GUION.",
+      "sections": [
+        {
+          "heading": "1. Ámbito",
+          "body": "ESTÉTICA GUION es una marca ficticia. Esta tienda es una DEMOSTRACIÓN TÉCNICA: no hay catálogo real, ni cobros, ni envíos, ni contrato de compraventa. Los precios mostrados son inventados y se expresan en euros con IVA incluido a modo de ejemplo."
+        },
+        {
+          "heading": "2. Proceso de compra simulado",
+          "body": "El carrito permite añadir, cambiar cantidades y eliminar productos, pero finalizar la compra muestra una confirmación de demostración. No se solicitan datos de tarjeta ni se realiza ninguna transacción."
+        },
+        {
+          "heading": "3. Precio y disponibilidad",
+          "body": "En una web real, el precio aplicable sería el mostrado en el momento de la compra y la disponibilidad la del stock real. Aquí el stock es ficticio y editable desde el panel de administración de la demo."
+        },
+        {
+          "heading": "4. Atención al cliente",
+          "body": "Para cualquier consulta en una web real, el cliente podría contactar por los canales indicados en la página de contacto, con respuesta en un plazo máximo de 30 días según la normativa de consumo."
+        }
+      ]
+    },
+    "devoluciones": {
+      "title": "Devoluciones y desistimiento (DEMO)",
+      "intro": "Ejemplo informativo del derecho de desistimiento aplicable a compras a distancia.",
+      "sections": [
+        {
+          "heading": "1. Derecho de desistimiento",
+          "body": "En una web real, conforme al Real Decreto Legislativo 1/2007, dispondrías de 14 días naturales desde la recepción del producto para desistir de la compra sin necesidad de justificación, devolviendo el producto en su embalaje original."
+        },
+        {
+          "heading": "2. Cómo ejercerlo",
+          "body": "Bastaría con comunicarlo por escrito (correo electrónico o formulario) indicando el pedido, y recibirías instrucciones de devolución. Los gastos de devolución correrían a cargo del cliente salvo producto defectuoso o error del vendedor."
+        },
+        {
+          "heading": "3. Excepciones",
+          "body": "No procedería el desistimiento en productos precintados que hayan sido abiertos por razones de higiene una vez desprecintados, ni en servicios ya ejecutados con consentimiento expreso."
+        },
+        {
+          "heading": "4. Reembolsos",
+          "body": "En una web real, el reembolso se emitiría por el mismo medio de pago utilizado, en un plazo máximo de 14 días naturales desde la notificación de desistimiento, pudiéndose retener cantidad hasta recibir el producto."
+        }
+      ]
+    },
+    "aviso": {
+      "title": "Aviso legal (DEMO)",
+      "intro": "Ejemplo de aviso legal conforme a la LSSI-CE, con datos deliberadamente ficticios.",
+      "sections": [
+        {
+          "heading": "1. Titularidad del sitio",
+          "body": "ESTÉTICA GUION es una marca ficticia creada para esta demostración técnica. NO existe una empresa real detrás. No se incluyen NIF, CIF, denominación social, domicilio social ni datos registrales porque son inventados y su uso en un sitio real sería ilegal."
+        },
+        {
+          "heading": "2. Propiedad intelectual",
+          "body": "El diseño, los textos ficticios y los gráficos originales de esta demo pertenecen al proyecto. Las fotografías externas se usan bajo licencia comercial verificable registrada en src/data/image-licenses.json."
+        },
+        {
+          "heading": "3. Responsabilidad",
+          "body": "El contenido es meramente demostrativo. La marca ficticia no presta servicios reales de estética ni vende productos reales. Cualquier parecido con marcas o personas reales es puramente coincidente."
+        },
+        {
+          "heading": "4. Legislación aplicable",
+          "body": "En una web real, las condiciones se regirían por la legislación española y europea, sometiéndose las partes a los juzgados del domicilio del consumidor en caso de controversia."
+        }
+      ]
+    }
+  }
+}

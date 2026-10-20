@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ESTÉTICA GUION">
+  <rect width="64" height="64" rx="14" fill="#2b261f"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#c8a15e">EG</text>
+  <rect x="12" y="48" width="40" height="1.5" fill="#c8a15e" opacity="0.7"/>
+</svg>

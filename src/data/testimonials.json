@@ -1,0 +1,42 @@
+[
+  {
+    "id": "test-01",
+    "name": "Lucía Márquez",
+    "city": "Valencia",
+    "treatment": "Hidrafacial Luminosidad",
+    "rating": 5,
+    "text": "Salí con la piel como después de vacaciones. El equipo te explica cada paso y el ambiente es de una calma increíble. Ya voy por mi cuarta sesión."
+  },
+  {
+    "id": "test-02",
+    "name": "Carmen Ortega",
+    "city": "Granada",
+    "treatment": "Maderoterapia Modeladora",
+    "rating": 5,
+    "text": "Noté la diferencia de ligereza desde la primera sesión. Me encanta que adapten la presión y el ritmo a cómo llegas cada día."
+  },
+  {
+    "id": "test-03",
+    "name": "Nerea Salas",
+    "city": "Sevilla",
+    "treatment": "Crema Nube de Avena",
+    "rating": 5,
+    "text": "Mi piel es reactiva y por fin he encontrado una crema que no me irrita. La compré tras probarla en el centro y ya no puedo vivir sin ella."
+  },
+  {
+    "id": "test-04",
+    "name": "Álvaro Prieto",
+    "city": "Madrid",
+    "treatment": "Ritual Arcilla & Caléndula",
+    "rating": 4,
+    "text": "Sorprendente: nunca me había hecho un tratamiento facial y la sensación tras el masaje de drenaje es de total desconexión. Repetiré."
+  },
+  {
+    "id": "test-05",
+    "name": "Rocío Benítez",
+    "city": "Alicante",
+    "treatment": "Eau de Parfum Jardín de Guion",
+    "rating": 5,
+    "text": "La fragancia es elegante y duradera, nada empalagosa. Recibí la muestra antes de decidirme y el asesoramiento fue impecable."
+  }
+]

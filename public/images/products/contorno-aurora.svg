@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4efe9"/>
+      <stop offset="100%" stop-color="#e4d9cb"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#8a7454" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <circle cx="360" cy="396" r="302.4" fill="url(#halo)"/>
+  <ellipse cx="360" cy="684" rx="148.8" ry="26" fill="#8a7454" opacity="0.16"/>
+  <g filter="url(#shadow)">
+    
+  <rect x="288" y="230" width="144" height="58.800000000000004" rx="6" fill="#c8a15e"/>
+  <path d="M 240 708.8 L 254.4 288.8 L 465.6 288.8 L 480 708.8 Z" fill="#efe7da"/>
+  <rect x="283.2" y="389.6" width="153.6" height="168" rx="10" fill="#ffffff" opacity="0.55"/>
+  <text x="360" y="490.4" text-anchor="middle" font-family="Georgia, serif" font-size="33.6" fill="#c8a15e" opacity="0.9">EG</text>
+  </g>
+  <text x="360" y="846" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="6" fill="#c8a15e">ESTÉTICA GUION</text>
+</svg>

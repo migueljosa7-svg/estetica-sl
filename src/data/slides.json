@@ -1,0 +1,30 @@
+[
+  {
+    "id": "slide-01",
+    "image": "/images/slide-1.jpg",
+    "alt": "Toalla enrollada, loción corporal y tulipanes rosas sobre una mesa clara",
+    "title": "Rituales que empiezan en casa",
+    "subtitle": "Descubre la cosmética que completa tu tratamiento."
+  },
+  {
+    "id": "slide-02",
+    "image": "/images/slide-2.jpg",
+    "alt": "Selección de cosmética decorativa en tonos beige y rosa empolvado",
+    "title": "Color con filosofía editorial",
+    "subtitle": "Maquillaje de acabado natural, pensado para la luz del Mediterráneo."
+  },
+  {
+    "id": "slide-03",
+    "image": "/images/slide-3.jpg",
+    "alt": "Mujer tocándose el cabello largo sobre un fondo rosa empolvado",
+    "title": "Belleza sin prisa",
+    "subtitle": "Diagnóstico personalizado y planes de cuidado a medida."
+  },
+  {
+    "id": "slide-04",
+    "image": "/images/slide-4.jpg",
+    "alt": "Tarro de crema corporal blanca sobre fondos suaves en tonos lila",
+    "title": "Fórmulas que se sienten",
+    "subtitle": "Texturas ligeras, activos honestos y resultados visibles."
+  }
+]
