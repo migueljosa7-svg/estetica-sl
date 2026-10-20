@@ -1,37 +1,63 @@
-﻿@import 'tailwindcss';
+@import 'tailwindcss';
 
 /*
- * Tema de ESTÃ‰TICA GUION â€” marfil, beige cÃ¡lido, rosa empolvado,
- * verde salvia y detalles dorados discretos.
- * Base editorial: tipografÃ­a serif elegante para tÃ­tulos, cuerpo
- * en sans monolÃ­ngue, espacios generosos y microinteracciones sutiles.
+ * Tema ESTÉTICA GUION — editorial de belleza premium.
+ * Marfil, beige cálido, rosa empolvado, verde salvia y dorado discreto.
+ * Tipografía serif para títulos, sans para cuerpo, espacios generosos.
  */
 
 @theme {
   --color-marfil-50: #fdfbf7;
   --color-marfil-100: #faf6ef;
   --color-marfil-200: #f3ecdf;
+  --color-marfil-300: #e8dcc9;
   --color-beige-100: #f0e7d8;
   --color-beige-200: #e6d9c3;
   --color-beige-300: #d9c8ab;
+  --color-rosa-50: #fff7f5;
   --color-rosa-100: #f7e9e6;
   --color-rosa-200: #eed4cf;
   --color-rosa-300: #e2b5ae;
   --color-rosa-400: #cf948c;
+  --color-rosa-500: #b97a70;
+  --color-salvia-50: #f2f5f1;
   --color-salvia-100: #e9ede5;
   --color-salvia-200: #d3dccc;
   --color-salvia-300: #b3c1aa;
   --color-salvia-400: #8d9d84;
+  --color-salvia-500: #6f8063;
   --color-salvia-600: #5d6b55;
+  --color-oro-200: #e9d9b2;
   --color-oro-300: #ddc287;
   --color-oro-400: #c8a15e;
   --color-oro-500: #a98543;
-  --color-tinta-700: #4a4238;
-  --color-tinta-800: #3b342c;
-  --color-tinta-900: #2b261f;
+  --color-oro-600: #8f6d38;
+  --color-tinta-50: #4a4238;
+  --color-tinta-700: #3b342c;
+  --color-tinta-800: #322b23;
+  --color-tinta-900: #27211b;
 
   --font-display: 'Fraunces', 'Georgia', 'Times New Roman', serif;
   --font-sans: 'Jost', 'Segoe UI', system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-soft: 0 1px 2px rgba(39, 33, 27, 0.04),
+    0 4px 16px rgba(39, 33, 27, 0.05);
+  --shadow-card: 0 1px 2px rgba(39, 33, 27, 0.04),
+    0 12px 40px -12px rgba(74, 66, 56, 0.20);
+  --shadow-card-hover:
+    0 2px 4px rgba(39, 33, 27, 0.06),
+    0 24px 64px -16px rgba(74, 66, 56, 0.28);
+  --shadow-elevated:
+    0 2px 4px rgba(39, 33, 27, 0.06),
+    0 32px 80px -20px rgba(39, 33, 27, 0.28);
+
+  --transition-standard: 200ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 500ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @layer base {
@@ -56,6 +82,7 @@
 
   body {
     @apply bg-marfil-100 font-sans text-tinta-800 antialiased;
+    min-height: 100vh;
   }
 
   body,
@@ -65,7 +92,10 @@
     @apply selection:bg-rosa-200 selection:text-tinta-900;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-display;
     letter-spacing: -0.02em;
   }
@@ -102,7 +132,12 @@
   position: absolute;
   inset: 0;
   transform: translateX(-100%);
-  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.55), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 0.6),
+    transparent
+  );
   animation: shimmer 1.8s infinite;
 }
 
@@ -131,8 +166,35 @@
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: exclude;
   mask-composite: exclude;
-  opacity: 0.35;
+  opacity: 0.3;
   pointer-events: none;
 }
 
+@utility rule-editorial {
+  @apply h-[1px] bg-beige-200 w-full my-0;
+}
 
+.rule-editorial::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 24px;
+  background: var(--color-oro-500);
+  margin: 0 auto;
+}
+
+@utility corner-accent {
+  position: relative;
+}
+
+.corner-accent::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid var(--color-oro-400);
+  border-right: 1px solid var(--color-oro-400);
+  opacity: 0.5;
+}

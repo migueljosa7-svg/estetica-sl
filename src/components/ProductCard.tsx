@@ -20,7 +20,7 @@ export function ProductCard({ product, onAdded }: ProductCardProps) {
   const out = product.stock <= 0
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-beige-200 bg-marfil-50 transition-all duration-300 hover:-translate-y-1 hover:border-oro-300 hover:shadow-[0_12px_40px_-12px_rgba(74,66,56,0.25)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-beige-200 bg-marfil-50 transition-all duration-300 hover:-translate-y-1 hover:border-oro-300 hover:shadow-[0_12px_40px_-12px_rgba(74,66,56,0.25)]">
       <div className="relative">
         <Link to={`/tienda/${product.slug}`} tabIndex={-1} aria-hidden="true">
           <LazyImage
