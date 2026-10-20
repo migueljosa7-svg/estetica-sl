@@ -10,11 +10,12 @@ import { useCart } from '@/context/CartContext'
 import { useFavorites } from '@/context/FavoritesContext'
 import { useStore } from '@/context/StoreContext'
 import { formatPrice } from '@/lib/format'
+import { WhatsAppButton } from '@/components/WhatsApp'
 import { NotFoundPage } from './NotFoundPage'
 
 export function ProductPage() {
   const { slug } = useParams<{ slug: string }>()
-  const { products, categories } = useStore()
+  const { products, categories, texts } = useStore()
   const { add } = useCart()
   const { isFavorite, toggle } = useFavorites()
   const { show } = useToast()
@@ -156,6 +157,14 @@ export function ProductPage() {
               <ShoppingBag aria-hidden="true" className="h-4 w-4" />
               {out ? 'Agotado' : 'Añadir a la cesta'}
             </button>
+
+            <WhatsAppButton
+              phone={texts.contactPhone}
+              variant="compact"
+              target={{ type: 'product', id: product.id, name: product.name }}
+              value={String(product.price)}
+              className="mt-3"
+            />
 
             <button
               type="button"

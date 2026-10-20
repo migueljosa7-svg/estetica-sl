@@ -5,7 +5,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Heart, Menu, Phone, ShoppingBag, X, Sparkles } from 'lucide-react'
 import { useCart } from '@/context/CartContext'
 import { useFavorites } from '@/context/FavoritesContext'
+import { useStore } from '@/context/StoreContext'
 import { cx } from '@/lib/format'
+import { WhatsAppButton } from '@/components/WhatsApp'
 
 const NAV_LINKS = [
   { to: '/', label: 'Inicio' },
@@ -24,6 +26,7 @@ export function Header({ onOpenCart }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false)
   const { count } = useCart()
   const { ids } = useFavorites()
+  const { texts } = useStore()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -93,13 +96,12 @@ export function Header({ onOpenCart }: HeaderProps) {
         </nav>
 
         <div className="flex items-center gap-1 sm:gap-2">
-          <a
-            href="tel:+34600000000"
-            className="hidden items-center gap-2 rounded-full border border-beige-300 px-4 py-2 text-sm text-tinta-700 transition-colors hover:border-oro-400 hover:text-tinta-900 md:inline-flex"
-          >
-            <Phone aria-hidden="true" className="h-4 w-4 text-oro-500" />
-            Reservar
-          </a>
+          <WhatsAppButton
+            phone={texts.contactPhone}
+            variant="compact"
+            target={{ type: 'treatment', id: 'header-reserva', name: 'una cita' }}
+            className="hidden sm:inline-flex"
+          />
 
           <Link
             to="/favoritos"

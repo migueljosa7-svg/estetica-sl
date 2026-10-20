@@ -6,6 +6,7 @@ import { LazyImage } from '@/components/LazyImage'
 import { Reveal } from '@/components/Reveal'
 import { useStore } from '@/context/StoreContext'
 import { cx, formatPrice } from '@/lib/format'
+import { WhatsAppButton } from '@/components/WhatsApp'
 import type { TreatmentArea } from '@/lib/types'
 
 type AreaFilter = TreatmentArea | 'all'
@@ -17,7 +18,7 @@ const AREA_LABELS: Array<{ value: AreaFilter; label: string }> = [
 ]
 
 export function TreatmentsPage() {
-  const { treatments } = useStore()
+  const { treatments, texts } = useStore()
   const [area, setArea] = useState<AreaFilter>('all')
   const [openId, setOpenId] = useState<string | null>(null)
 
@@ -135,6 +136,14 @@ export function TreatmentsPage() {
                     <Sparkles aria-hidden="true" className="h-4 w-4" />
                     Solicitar cita (demo)
                   </Link>
+
+                  <WhatsAppButton
+                    phone={texts.contactPhone}
+                    variant="compact"
+                    target={{ type: 'treatment', id: t.id, name: t.name }}
+                    value={String(t.price)}
+                    className="mt-3"
+                  />
                 </div>
               </article>
             </Reveal>

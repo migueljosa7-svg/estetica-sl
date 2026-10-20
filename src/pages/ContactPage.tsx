@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CheckCircle2, Clock, Mail, MapPin, Phone, Send, TriangleAlert } from 'lucide-react'
 import { Reveal } from '@/components/Reveal'
+import { WhatsAppButton } from '@/components/WhatsApp'
 import { useStore } from '@/context/StoreContext'
 import { cx } from '@/lib/format'
 import { validateContact, type ContactValues, type FieldErrors } from '@/lib/validation'
@@ -66,6 +67,15 @@ export function ContactPage() {
           Este formulario es una demostración: la validación funciona, pero el mensaje no se
           envía a ningún servidor ni se almacena fuera de tu navegador.
         </p>
+
+        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          <WhatsAppButton
+            phone={texts.contactPhone}
+            variant="primary"
+            target={{ type: 'treatment', id: 'whatsapp-contact', name: 'una cita' }}
+            className="w-full sm:w-auto"
+          />
+        </div>
       </header>
 
       <div className="grid gap-10 lg:grid-cols-5 lg:gap-14">
